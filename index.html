@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Timer App</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <label>Set Custom Timer</label>
+        <input type="range" id="timerrange" min="0" max="10" value='0'/>
+        <p id="rangevalue"></p>
+        <button id="btn1">Start</button>
+        <button id="btn2">Stop</button>
+    </header>
+    <progress id="progress" value="100" max="100"></progress>
+      <div id="message"> 
+      </div>
+      <main>
+        <span id="reset" title="reset"><i class="fa-solid fa-rotate"></i></span>
+        <div>
+          <span id="hour">00</span>
+          <p>Hour</p>
+        </div>
+        <h4>:</h4>
+        <div>
+          <span id="min">00</span>
+          <p>Min</p>
+        </div>
+        <h4>:</h4>
+        <div>
+          <span id="sec">00</span>
+          <p>Sec</p>
+        </div>
+      </main>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
